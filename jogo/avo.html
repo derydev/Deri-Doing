@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin-top: 200px;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            align-items: center;
+            text-align: center;
+        }
+        .tela{
+            background-color: #2e4861;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+        label{
+            display: block;
+            margin-bottom: 5px;
+        }
+        input{
+            width: 95%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        button{
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button a{
+            color: #fff;
+            text-decoration: none;
+        }
+        button:hover{
+            color:#000;
+            background-color: rgb(0, 55, 110);
+        }
+    </style>
+    <title>Avo</title>
+</head>
+<body>
+        <h1>Login</h1>
+ <div class="tela">
+    <label for="nome">Email</label>
+    <input type="text" id="nome" placeholder="Digite o seu Email"><br><br>
+    <label for="senha">Senha</label>
+    <input type="password" id="senha" placeholder="Digite a sua Senha"><br><br>
+    <button id="btn" onclick="entrar()"><a href="jogo.html">Entrar</a></button> 
+</div>
+<script>
+    function entrar(){
+        let nome = document.getElementById("nome").value;
+        let senha = document.getElementById("senha").value;
+
+        if(nome == "deri" && senha == "1234"){
+            alert(`Benvindo,  ${nome}`);
+        }else if(nome != "deri" && senha != "1234"){
+            for(let c = 0; c < 3; c++){
+                alert("Email e senha incorretos");
+            }
+            alert("Tente novamente mais tarde");
+
+        }
+
+    }
+</script>
+</body>
+</html>
