@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazônia - Premium Brazilian Açaí Indulgence</title>
+    <meta name="description"
+        content="Experience the ultimate luxury Açaí indulgence. Authentic Brazilian flavor, 100% natural ingredients, and fresh fruit toppings, handcrafted daily.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Ambient Background Lighting -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Navigation Header -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="#" class="logo-link" id="nav-logo">
+                <span class="logo-text">AMAZÔNIA</span>
+                <span class="logo-badge">PREMIUM AÇAÍ</span>
+            </a>
+
+            <nav class="main-nav" id="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-item active">Home</a></li>
+                    <li><a href="#benefits" class="nav-item">Benefits</a></li>
+                    <li><a href="#menu" class="nav-item">Menu</a></li>
+                    <li><a href="#testimonials" class="nav-item">Testimonials</a></li>
+                    <li><a href="#contact" class="nav-item">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#order" class="btn btn-primary btn-nav" id="nav-cta">Order Now</a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <div class="mobile-menu-container">
+            <ul class="mobile-nav-list">
+                <li><a href="#home" class="mobile-nav-item">Home</a></li>
+                <li><a href="#benefits" class="mobile-nav-item">Benefits</a></li>
+                <li><a href="#menu" class="mobile-nav-item">Menu</a></li>
+                <li><a href="#testimonials" class="mobile-nav-item">Testimonials</a></li>
+                <li><a href="#contact" class="mobile-nav-item">Contact</a></li>
+                <li><a href="#order" class="btn btn-primary btn-mobile-nav">Order Now</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Hero Section -->
+    <main class="hero-section" id="home">
+        <!-- Background Animation Canvas and Overlay -->
+        <canvas id="hero-bg-canvas" class="hero-bg-canvas"></canvas>
+        <div class="hero-bg-overlay"></div>
+
+        <div class="hero-container">
+            <!-- Left Column: Premium content details -->
+            <div class="hero-content">
+                <div class="tagline-badge animate-fade-in">
+                    <span class="badge-dot"></span> Authentic Brazilian Flavor
+                </div>
+
+                <h1 class="hero-headline animate-slide-up">
+                    Experience the Ultimate <br>
+                    <span class="gradient-text">Açaí Indulgence</span>
+                </h1>
+
+                <p class="hero-subheadline animate-slide-up-delay-1">
+                    Fresh fruits, premium ingredients, and authentic Brazilian flavor blended into every spoonful.
+                    Crafted for those who appreciate pure, natural luxury.
+                </p>
+
+                <!-- Call to Actions -->
+                <div class="hero-actions animate-slide-up-delay-2">
+                    <a href="#build" class="btn btn-primary btn-lg" id="hero-primary-cta">
+                        <span>Build Your Bowl</span>
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="#menu" class="btn btn-secondary btn-lg" id="hero-secondary-cta">
+                        See Menu
+                    </a>
+                </div>
+
+                <!-- Highlights Section: 3 Glassmorphism Cards -->
+                <div class="hero-highlights animate-slide-up-delay-3">
+                    <div class="highlight-card">
+                        <div class="card-icon-wrapper">
+                            <!-- Leaf Icon for Natural -->
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 2C12 2 14.5 7.5 19 9.5C19 9.5 17.5 14.5 12 22C12 22 6.5 14.5 5 9.5C9.5 7.5 12 2 12 2Z"
+                                    stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+                                <path d="M12 9V21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                <path d="M12 13C13.5 14.5 15.5 15 15.5 15" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                                <path d="M12 16.5C10.5 17.5 9 18 9 18" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">100% Natural</h3>
+                            <p class="card-desc">Pure organic ingredients</p>
+                        </div>
+                    </div>
+
+                    <div class="highlight-card">
+                        <div class="card-icon-wrapper">
+                            <!-- Sparkle/Fruit Icon -->
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 3V6M12 18V21M3 12H6M18 12H21M5.63604 5.63604L7.75736 7.75736M16.2426 16.2426L18.364 18.364M5.63604 18.364L7.75736 16.2426M16.2426 7.75736L18.364 5.63604"
+                                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8" />
+                            </svg>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">Fresh Toppings</h3>
+                            <p class="card-desc">Handpicked daily harvest</p>
+                        </div>
+                    </div>
+
+                    <div class="highlight-card">
+                        <div class="card-icon-wrapper">
+                            <!-- Shield/Check or Clock Icon -->
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 8V12L14 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8" />
+                                <path d="M12 2V4M12 20V22M2 12H4M20 12H22" stroke="currentColor" stroke-width="1.2"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">Made Daily</h3>
+                            <p class="card-desc">Maximum active freshness</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Visual Stage for future interactive showcase -->
+            <div class="hero-visual-placeholder">
+
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+</body>
+
+</html>
