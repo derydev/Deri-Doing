@@ -1,0 +1,44 @@
+:root{--bg1:#ff7eb3;
+    --bg2:#65d6ff;
+    --card:#ffffffcc;
+    --accent:#6a00f4
+}
+*{box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:Inter, system-ui, Arial, sans-serif
+}
+html,body,#root{
+    height:100%}
+body{
+    /*min-height:100vh;background:linear-gradient(135deg,var(--bg1),var(--bg2));*/
+    background-image:url(reu.jpg);
+    background-size:cover;
+    display:flex;
+    align-items:center;
+    justify-content:center
+
+}
+
+.hero{width:100%;
+    max-width:940px;
+    padding:40px}
+
+.socials{display:flex;gap:14px;justify-content:center;margin-bottom:24px}
+.icon{display:inline-grid;place-items:center;width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,0.12);box-shadow:0 6px 20px rgba(0,0,0,0.12);font-size:24px;text-decoration:none;transition:transform .18s, background .18s}
+.icon:hover{transform:translateY(-6px);background:linear-gradient(180deg,rgba(255,255,255,0.18),rgba(255,255,255,0.06))}
+a{
+    text-decoration: none;
+    color: #111;
+}
+.center-card{background:var(--card);backdrop-filter:blur(6px);padding:28px;border-radius:16px;text-align:center;box-shadow:0 10px 40px rgba(0,0,0,0.15)}
+.title{font-size:28px;color:#111;margin-bottom:6px}
+.subtitle{color:#444;margin-bottom:18px}
+.buttons{display:flex;gap:12px;justify-content:center;margin:14px 0}
+.btn{padding:12px 20px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+.btn.primary{background:var(--accent);color:white;box-shadow:0 8px 22px rgba(106,0,244,0.28)}
+.btn.ghost{background:transparent;border:2px solid rgba(0,0,0,0.08)}
+.phrase{margin-top:16px;padding:12px;border-radius:10px;background:linear-gradient(90deg,rgba(255,255,255,0.7),rgba(255,255,255,0.5));color:#222}
+.footer-note{margin-top:18px;text-align:center;color:rgba(0,0,0,0.45);font-size:13px}
+
+@media (max-width:540px){.title{font-size:22px}.icon{width:48px;height:48px}}
